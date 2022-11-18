@@ -2,26 +2,18 @@
 
 if [[ -n $USER ]]; then
 
-	# ex. /Users/minjakim/Library/Caches -> "/Library/Caches"
-	#
-	# below is a list of what I use. (slightly extreme)
-	#
-	# "/Library/Caches" \
-	# "/Library/Containers" \
-	# "/.brew/Library/Taps/homebrew/homebrew-core/.git" \
-	# "/.vscode" \
-	# "/.npm" \
-	# "/.cache" \
-	# "/Library/ApplicationSupport/discord" \
-	# "/Library/ApplicationSupport/Google" \
-	# "/Library/ApplicationSupport/BraveSoftware" \
-	# "/Library/ApplicationSupport/Code" \
-	# "/Library/ApplicationSupport/Slack"
 
 	for FOLDER in "/Library/Caches" \
-		"/Library/Container" \
+		"/Library/Containers" \
+		"/.brew/Library/Taps/homebrew/homebrew-core/.git" \
 		"/.vscode" \
-		"/.cache"
+		"/.npm" \
+		"/.cache" \
+		"/Library/ApplicationSupport/discord" \
+		"/Library/ApplicationSupport/Google" \
+		"/Library/ApplicationSupport/BraveSoftware" \
+		"/Library/ApplicationSupport/Code" \
+		"/Library/ApplicationSupport/Slack"
 	do
 		if [[ ! -d "/goinfre/$USER$FOLDER" ]]; then
 			mkdir -p "/goinfre/$USER$FOLDER"
