@@ -19,7 +19,7 @@ if [[ -n $USER ]]; then
 	# "/Library/ApplicationSupport/Slack"
 
 	for FOLDER in "/Library/Caches" \
-		"/Library/Container" \
+		"/Library/Containers" \
 		"/.vscode" \
 		"/.cache"
 	do
