@@ -20,7 +20,6 @@ if [[ -n $USER ]]; then
 
 	for FOLDER in "/Library/Caches" \
 		"/Library/Containers" \
-		"/.vscode" \
 		"/.cache"
 	do
 		if [[ ! -d "/goinfre/$USER$FOLDER" ]]; then
